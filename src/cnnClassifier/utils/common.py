@@ -29,7 +29,9 @@ def create_directory(directory_path:list,verbose=True):
     for path in directory_path:
         os.makedirs(path,exist_ok=True)
 
-        
+        if verbose:
+            logger.info(f'directory created at:{path}')
+
 
 @ensure_annotations
 def save_json(path,data):
