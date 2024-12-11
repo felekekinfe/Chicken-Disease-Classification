@@ -12,7 +12,7 @@ try:
     logger.info(f'>>>>> stage {STAGE_NAME} completed <<<<<')
 except Exception as e:
     logger.exception(e)
-    raise 
+    raise e
 
 
 STAGE_NAME='Prepare Base Model Stage'
@@ -24,4 +24,4 @@ try:
     logger.info(f'>>>>> stage {STAGE_NAME} completed <<<<<')
 except Exception as e:
     logger.exception(e)
-    raise 
+    raise e
